@@ -1,0 +1,555 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue';
+    background-color: black;
+    color: #333;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 27px;
+    margin: 0 0 .4em;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+/* This part styles the first "card" which is the Netflix intro message and subscribe field */
+.card-1 {
+    background-image:
+    linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.3)),
+    url('/images/netflix-bg.jpg');
+    background-size: cover;
+    width: 1425px;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+
+.header-container {
+    height: 4rem;
+    background-color: transparent;s;
+    transition: background-color .5s;
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5rem;
+    z-index: 10;
+}
+
+.header {
+    position: relative;
+    margin: 0 3.5rem;
+    height: 100%;
+}
+
+.logo {
+    fill: #e50914;
+    line-height: normal;
+}
+
+.logo .netflix-logo {
+    padding-top: .5rem;
+    height: 36px;
+    width: 134px;
+}
+
+.sign-in {
+    color: #fff;
+    border-radius: 3px;
+    margin-top: .5rem;
+}
+
+.sign-in.sign-in-btn {
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 16px;
+    float: right;
+}
+
+.get-started-card {
+    margin: 0 auto;
+}
+
+.get-started-ctn {
+    position: relative;
+    border-bottom: 8px solid #222;
+    color: #fff;
+    padding: 70px 45px;
+}
+
+.get-started-text {
+    position: relative;
+    width: 100%;
+    padding: 75px 0;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+.sub-title {
+    font-size: 1.625rem;
+    font-weight: 300;
+    margin: 1rem auto;
+    max-width: 640px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 26px;
+}
+
+.get-started-ctn h1, .get-started-ctn h2 {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.get-started-card h2 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.subscribe {
+    max-width: 950px;
+    padding-top: .85rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.ask-email {
+    max-width: none;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    padding: 0 5%;
+    margin: 0 auto;
+    font-weight: 400;
+    height: 44px;
+}
+
+.email-ctn {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.email-box {
+    vertical-align: top;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+ul.email-box li {
+    list-style: none;
+    margin-left: 0;
+}
+
+.email-field {
+    margin-bottom: 10px;
+}
+
+.email-input {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    max-width: 500px;
+}
+
+.email-input-placement {
+    position: relative;
+}
+
+.email-text-field {
+    min-width: 450px;
+    height: 60px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding: 10px 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+    display: block;
+    color: #000;
+}
+
+.input-email {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #8c8c8c;
+    font-size: 16px;
+    transform: translateY(-50%);
+    font-weight: 200;
+}
+
+.submit-btn {
+    margin: 0!important;
+    font-size: 1.625rem;
+    min-height: 60px;
+    border-top-left-radius: 0;
+    border-left: 1px solid #333;
+    padding: 0 1em;
+    display: inline-flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: initial;
+    width: auto;
+    min-width: 74px;
+    position: relative;
+    color: #fff;
+    background-color: #e50914;
+    vertical-align: middle;
+    font-weight: 400;
+    letter-spacing: .1px;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.get-started-now {
+    padding: .5rem 0;
+    flex: 1 1 auto;
+    text-align: center;
+    -webkit-box-flex: 1;
+}
+
+/* This part styles the second "card" which is the enjoy your tv message */
+.card-2 {
+    padding: 70px;
+    padding-right: 0;
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+    height: 100%;
+    width: 1250px;
+}
+
+.enjoy-your-ctn {
+    width: 1100px;
+    height: 326px;
+    margin: 0 117.5px;
+    display: flex;
+    -webkit-box-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enjoy-text {
+    margin: -5% 0;
+    flex: 0 1 auto;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+    width: 595px;
+    height: 180px;
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.img-ctn {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+}
+
+.ctn-img-ctn {
+    margin: -10% -5% -5% 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-show {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+/* This part styles the third part which is download your shows */
+.card-3 {
+    padding: 70px 45px;
+    position: relative;
+    border-bottom: 8px solid #222;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+}
+
+.download-ctn {
+    height: 322px;
+    width: 1100px;
+    flex-flow: row-reverse;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-self: space-between;
+}
+
+.download-text {
+    width: 547px;
+    height: 202px;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    z-index: 3;
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding: 0 0 0 48px;
+}
+
+
+.cards-header {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.cards-sub-header {
+    font-size: 1.625rem;
+    font-weight: 400;
+    height: 99px;
+    width: 547px;
+}
+
+
+/* This part styles the fourth part which is watch everywhere */
+.card-4 {
+    padding: 70px 45px;
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+    height: 395px;
+}
+
+.watch-ctn {
+    width: 1100px;
+    height: 395px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 0 117px;
+}
+
+.watch-text-ctn {
+    margin: -2% 0;
+    width: 595px;
+    height: 180px;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.watch-card-title {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.watch-img-ctn {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+}
+
+.watch-img {
+    margin: -5% -10% 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.watch-img-show {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* This part styles the FAQ part of the netflix website */
+.faq {
+    text-align: center;
+    padding: 70px 45px;
+    position: relative;
+    border-bottom: 8px solid #222;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+    width: 1335px;
+    height: 697px;
+    margin: auto;
+}
+
+.faq-text {
+    font-weight: 325;
+}
+
+.faq-ctn {
+    height: 697px;
+    width: 1335px;
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.faq-list {
+    width: 75%;
+    margin: 2em auto;
+    max-width: 815px;
+    list-style-type: none;
+}
+
+.faq-list-item {
+    background: #3f3f3f;
+    display: block;
+    text-align: left;
+    height: 33px;
+    width: 727px;
+    margin: auto;
+    padding-right: 57.2px;
+    padding-left: 31.2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+}
+
+.faq-header {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+    margin: auto;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.plus {
+    float: right;
+    fill: white;
+}
+
+.subscribe-2 {
+    margin-left: 220px;
+}
+
+/* Finally this styles the footer part which holds all the links at the bottom like in every other webiste */
+.footer {
+    width: 1090px;
+    height: 353px;
+    border-bottom: none;
+    padding-bottom: 0;
+    position: relative;
+    padding: 70px 45px;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-ctn {
+    width: 1000px;
+    height: 283px;
+    margin-top: 0;
+    min-width: 190px;
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 1em;
+    color: #757575;
+    position: relative;
+}
+
+.footer-layout {
+    padding-top: 0;
+    margin: 0 auto;
+    width: 900px;
+    height: 250px;
+
+}
+
+.footer-list-links {
+    margin-top: 30px;
+    padding: 0;
+    min-width: 1000px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.link {
+    list-style: none;
+    margin-left: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 225px;
+    height: 16px;
+    padding-right: 12px;
+    vertical-align: top;
+}
+
+ul.footer-list-links>li {
+    list-style: none;
+    margin-left: 0;
+}
+
+.final-footer {
+    font-size: 13px;
+    margin-top: 24px;
+}
